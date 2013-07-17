@@ -6,4 +6,5 @@ Naučili smo se:
 - git je smotan
 - Google to the rescue (most of the time)
 - problems are challenges
-ajda sprememba
+
+Add more!
