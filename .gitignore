@@ -7,3 +7,6 @@
 # osx noise
 .DS_Store
 profile
+
+# Python compiles
+*.pyc
