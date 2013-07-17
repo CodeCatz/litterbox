@@ -6,8 +6,13 @@ CodeCatz litterbox - pieces of shitty code
 =======
 Hello world!
 MEOW!
+<<<<<<< HEAD
 
 test dj
+=======
+^.^
+
+>>>>>>> ee71d84951d394db3bec47ac65b09cd2090b4233
 
 ### Vagrant environment
 
