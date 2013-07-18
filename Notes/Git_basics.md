@@ -9,7 +9,9 @@
 ## Making and uploading changes
 
 `git add .` // add changes
+
 `git commit -m "What did I change?"` // save package of changes
+
 `git push` // transfer your latest changes to remote repository (only working code!)
 
 More info: http://gitref.org/basic/
