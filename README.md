@@ -3,15 +3,9 @@ litterbox
 
 CodeCatz litterbox - pieces of shitty code
 
-=======
-Hello world!
-MEOW!
+### What's this?
 
-test dj
-=======
-^.^
-
-:)
+Just a litterbox where we can play with Git and Python. Very messy, lots of fun.
 
 ### Vagrant environment
 
