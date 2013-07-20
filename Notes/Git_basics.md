@@ -15,3 +15,5 @@
 `git push` // transfer your latest changes to remote repository (only working code!)
 
 More info: http://gitref.org/basic/
+
+Cheatsheet: https://na1.salesforce.com/help/doc/en/salesforce_git_developer_cheatsheet.pdf
