@@ -201,5 +201,29 @@ print persian_cat
 print backslash_cat
 print fat_cat
 
+# print new_exercise % 11
+
+# learning how to ask user for input
+# print "How old are you?",
+# age11 = raw_input()
+# print "How tall are you?",
+# height11 = raw_input()
+# print "How much do you weigh?",
+# weight11 = raw_input()
+# another, more compact way of doing it
+# name11 = raw_input("Tell me your name: ")
+# print it all together, woot!
+# print "So, %s you're %s old, %r tall and %r heavy." % (
+#	name11, age11, height11, weight11)
+
+print new_exercise % 12
+
+# this is similar to 11, so I commented that and will leave this one active
+age12 = raw_input("How old are you? ")
+height12 = raw_input("How tall are you? ")
+weight12 = raw_input("How much do you weigh? ")
+
+print "So, you're %r old, %r tall and %r heavy." % (
+	age12, height12, weight12)
 
 
