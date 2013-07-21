@@ -1,1 +1,3 @@
-print "sara je vesela"
+print "sara"
+ime= "sara"
+print ime*5
