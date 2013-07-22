@@ -21,4 +21,5 @@ out_file.write(indata)
 print "Alright, all done."
 
 out_file.close()
-from_file.close()
+# don't need to close if I just use indata = open(from_file).read()
+# in_file.close()
