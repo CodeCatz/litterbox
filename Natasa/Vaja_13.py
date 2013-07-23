@@ -1,7 +1,7 @@
 # Input method to pass variables to a script (py files)
 
-# Import - this is how you add features to your script from
-# Python feature set.
+# Import - this is how you add features (MODULE) to your script from
+# Python feature (MODULE) set.
 # argv = "argument variable" - it holds arguments you pass when you run it
 
 from sys import argv
@@ -16,3 +16,4 @@ print "Your second variable is: ", second
 print "Your third variable: ", third
 
 # You run this from command line - python Vaja_13.py hamburger marmelada sir
+
