@@ -24,3 +24,5 @@ print "I feel %s" % mood
 #The input() function will try to convert things you enter as if
 #they were Python code, but it has security problems so you should
 #avoid it.
+
+#try to keep lines 80 characters long
