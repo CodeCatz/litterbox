@@ -13,3 +13,6 @@ profile
 
 # Temp files
 *~
+
+# vagrant
+.vagrant
