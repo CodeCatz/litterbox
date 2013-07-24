@@ -4,7 +4,7 @@ age = 29
 # male = 1, female 10
 gender = 10
 
-# 2 single, 4 relationship, 6 open relationship, 8 it's complicated, 10 I'm a pizza, 0 depends
+# 2 single, 4 relationship,  6 open relationship, 8 it's complicated, 10 I'm a pizza, 0 depends
 status = 4
 
 # 0 - 10 (%)
