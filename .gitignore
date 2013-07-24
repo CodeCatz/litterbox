@@ -1,0 +1,15 @@
+# Textmate
+*.tm_build_errors
+
+# old skool
+.svn
+
+# osx noise
+.DS_Store
+profile
+
+# Python compiles
+*.pyc
+
+# Temp files
+*~
