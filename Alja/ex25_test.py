@@ -1,4 +1,4 @@
-# jsut trying out importing another Python script in this file
+# just trying out importing another Python script in this file
 
 # importing all functions from script ex25.py
 from ex25 import *
