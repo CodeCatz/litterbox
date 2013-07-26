@@ -4,6 +4,7 @@ def gold_room():
 	print "This room is full of gold. How much do you take?"
 
 	next = raw_input("> ")
+	# nice function for checking if the string input is a digit or not
 	if next.isdigit():
 		how_much = int(next)
 	else:
