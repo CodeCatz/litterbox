@@ -1,0 +1,90 @@
+## Animal is-a object (yes, sort of confusing) look at the extra credit
+class Animal(object):
+	pass
+
+## Dog is-a Animal
+class Dog(Animal):
+
+	def __init__(self, name):
+		## Dog has-a name
+		self.name = name
+
+	def bark(self, times):
+		print "Woof " * times
+
+## Cat is-a Animal 
+class Cat(Animal):
+
+	def __init__(self, name):
+		## Cat has-a name (same as dog, could have added that to the Animal class)
+		self.name = name
+
+	def meow(self, times):
+		print "Meow " * times
+
+## Person is-a object
+class Person(object):
+
+	def __init__(self, name):
+		## Person has-a name
+		self.name = name
+
+		## Person has-a pet of some kind
+		self.pet = None
+
+	def talk(self):
+		print self.name, "says blah blah blah."
+
+## Employee is-a Person
+class Employee(Person):
+
+	def __init__(self, name, salary):
+		## Employee has-a name, which it gets from its super?, the Person
+		super(Employee, self).__init__(name)
+		## Employee has-a salary
+		self.salary = salary
+
+## Fish is-a object
+class Fish(object):
+	pass
+
+## Salmon is-a Fish
+class Salmon(Fish):
+	pass
+
+# Halibut is-a Fish
+class Halibut(Fish):
+	pass
+
+
+## rover is-a Dog with the name Rover
+rover = Dog("Rover")
+
+## satan is-a Cat with the name Satan
+satan = Cat("Satan")
+
+## mary is-a Person with the name Mary
+mary = Person("Mary")
+
+## mary has-a pet satan
+mary.pet = satan
+
+## frank is-a Employee with the name Frank and a salary of 120000
+frank = Employee("Frank", 120000)
+
+## frank has-a pet rover
+frank.pet = rover
+
+## flipper is-a Fish
+flipper = Fish()
+
+## crouse is-a Salmon
+crouse = Salmon()
+
+## harry is-a Halibut
+harry = Halibut()
+
+satan.meow(3)
+rover.bark(2)
+frank.talk()
+mary.talk()
