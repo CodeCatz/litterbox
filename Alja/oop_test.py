@@ -6,18 +6,18 @@ WORD_URL = "http://learncodethehardway.org/words.txt"
 WORDS = []
 
 PHRASES = {
-	"class ###(###):": 
-		"Make a class named ###",
-	"class ###(object):\n\tdef __init__(self, ***":
-		"class ###",
-	"class ###(object):\n\tdef ***(self, @@@)":
-		"class ###",
-	"*** = ###()":
-		"Set *** to be an instance of class ###.",
-	"***.***(@@@)":
-		"From *** get the *** function, and call it with parameters self, @@@.",
-	"***.*** = '***'":
-		"From *** get the *** attribute and set it to '***'."
+    "class %%%(%%%):":
+      "Make a class named %%% that is-a %%%.",
+    "class %%%(object):\n\tdef __init__(self, ***)" :
+      "class %%% has-a __init__ that takes self and *** parameters.",
+    "class %%%(object):\n\tdef ***(self, @@@)":
+      "class %%% has-a function named *** that takes self and @@@ parameters.",
+    "*** = %%%()":
+      "Set *** to an instance of class %%%.",
+    "***.***(@@@)":
+      "From *** get the *** function, and call it with parameters self, @@@.",
+    "***.*** = '***'":
+      "From *** get the *** attribute and set it to '***'."
 }
 
 # do they want to drill phases first
@@ -33,9 +33,9 @@ for word in urlopen(WORD_URL).readlines():
 # our local list WORDS is now filled with words from the remote txt
 
 def convert(snippet, phrase):
-	# choose x (number of ###) words from WORDS, capitalizing them
+	# choose x (number of %%%) words from WORDS, capitalizing them
 	class_names = [w.capitalize() for w in
-					random.sample(WORDS, snippet.count("###"))]
+					random.sample(WORDS, snippet.count("%%%"))]
 	# same thing, only we need y words now (equal to number of ***)
 	other_names = random.sample(WORDS, snippet.count("***"))
 	results = []
@@ -52,10 +52,10 @@ def convert(snippet, phrase):
 		result = sentence[:]
 
 		# fake class names
-		# replace each ### with the words from the list other_names
-		for word in other_names:
+		# replace each %%% with the words from the list other_names
+		for word in class_names:
 			# (old, new[, maxreplace])
-			result = result.replace("###", word, 1)
+			result = result.replace("%%%", word, 1)
 
 		# fake other names
 		for word in other_names:
