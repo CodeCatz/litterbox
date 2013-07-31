@@ -21,6 +21,8 @@ If you don't have `pip`, you can also try:
     sudo easy_install pip
     
 
+That's it. You're ready to run and make Flash apps.
+
 #### An example Flask app
 
 In your local copy of the litterbox repo, move into the folder Goranche/webServer and run the Python script that start a simple web server.
@@ -29,6 +31,10 @@ In your local copy of the litterbox repo, move into the folder Goranche/webServe
     python server.py
     
 Now open `http://localhost:5000` with your favorite web browser and see what happens.
+
+#### Make your own!
+
+Just copy the files from Goranche's webServer folder into your own folder of choice. Make necessary changes to scripts. Run the server & have fun!
 
 ### Vagrant environment
 
