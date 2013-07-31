@@ -31,7 +31,7 @@ else:
 	print "Phew! Not being a female already reduces your risk of high life complexity. Well, unless you're dating one."
 	genderperc= 30
 
-#AGE (each age gives a certain level of complexity) - REMOVED BUGS: CHECKED.
+#AGE (each age gives a certain level of complexity) - CHECKED FOR BUGS
 
 print ">How old are you? Your real age...no cheating here!"
 age = raw_input(prompt)
@@ -147,16 +147,20 @@ else:
 # ONLINE POPULARITY
 print ">What's your Klout score?"
 popularity_online = raw_input(prompt)
-if int(popularity_online) <= 10:
-	popularityperc = 0
-	print "You don't appear to be popular. On the bright side, this reduces  human relationships related complications."
-elif int(popularity_online) > 11 and int(popularity_online) <= 25:
-	popularityperc = 50
-elif int(popularity_online) > 25 and int(popularity_online) <= 45:
-	popularityperc = 75
+if input > 0
+
+	elif int(popularity_online) <= 10:
+		popularityperc = 0
+		print "You don't appear to be popular. On the bright side, this reduces  human relationships related complications."
+	elif int(popularity_online) > 11 and int(popularity_online) <= 25:
+		popularityperc = 50
+	elif int(popularity_online) > 25 and int(popularity_online) <= 45:
+		popularityperc = 75
+	else:
+		popularityperc = 100
+		print "Guess you're an Internet personality of some sort? "
 else:
-	popularityperc = 100
-	print "Guess you're an Internet personality of some sort? "
+	print "error!"
 
 # REAL LIFE POPULARITY
 print ">How many real life friends do you have?"
@@ -181,7 +185,7 @@ print "____________________________________________________________"
 print """Your name is %s. You are a %s, %d old, your relationship status is %s and you consider your ignorance level as: %s.
 You have %d EUR but you wish you had %d EUR. You would probably get there sooner if you didn't spend %d EUR this year.
 """%(name, gender, int(age), status, ignorance, int(money_have), int(money_wants), int(money_spent))
-print "Your popularity level based on Klout score is %d and you only have %d of real life friends"%(int(popularity_online), int(rl_friends))
+print "Your popularity level based on Klout score is %d and you only have %d real life friends"%(int(popularity_online), int(rl_friends))
 print "*** ______________________________________________________***"
 print "   CONGRATULATIONS, YOUR LIFE IS %d PERCENT COMPLICATED!" %float(percent)
 print "*** ______________________________________________________***"
