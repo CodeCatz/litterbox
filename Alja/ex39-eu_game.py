@@ -61,7 +61,7 @@ eu_capitals = {
 }
 
 def find_capital():
-	print "I'll now tell you the capital of any EU member state."
+	print "\nI'll now tell you the capital of any EU member state."
 	# letting the user type in a country, using .title() to capitalize first letter
 	user_country = raw_input("Which country are you interested in? ").title()
 	# checking if the user's country is in the dict eu_countries
@@ -83,14 +83,12 @@ def find_capital():
 			# printing them separated by commas, not as a raw list
 			print ', '.join(list_countries)
 			# calling the function that offers another lookup
-			try_again()
-		else:
-			try_again()
 
 	else:
 		# if the country is a member state, I lookup the capital using the country code
 		print "The capital of %s is: %s" % (user_country, eu_capitals[country])
-		try_again()
+	
+	try_again()
 
 # just a simple function that check if the user wants another lookup
 def try_again():
