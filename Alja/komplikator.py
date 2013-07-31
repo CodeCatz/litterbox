@@ -1,3 +1,9 @@
+
+# list of variables that need to be taken into account
+complicators = ["age", "gender", "status", "ignorance", "money", "popularity_online", "rl_friends"]
+
+
+
 # 0 - 100
 age = 29
 
@@ -64,8 +70,11 @@ def klout_calc(score):
 	else:
 		return 0
 
-my_score = age_calc(age) + gender + status - ignorance + money_score(money) + klout_calc(popularity_online) + rl_friends
-max_score = 10 * 6
+def overall_score(*complicators):
+	my_score = age_calc(age) + gender + status - ignorance + money_score(money) + klout_calc(popularity_online) + rl_friends
+	max_score = 10 * 6
+	result = (my_score / float(max_score)) * 100
+	return result
 
 print "Your complexity score is:"
-print (my_score / float(max_score)) * 100
+print overall_score(*complicators)
