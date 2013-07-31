@@ -16,3 +16,4 @@ profile
 
 # vagrant
 .vagrant
+venv
