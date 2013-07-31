@@ -9,16 +9,21 @@ Just a litterbox where we can play with Git and Python. Very messy, lots of fun.
 
 ### Web development with Flask
 
-[Flask](http://flask.pocoo.org/) is super slim web framework for Python.
-To install it just try
+#### Install Flask
+
+[Flask](http://flask.pocoo.org/) is a super slim web framework for Python.
+To install it just try running:
 
     sudo pip install Flask
     
-If you don't have `pip` try this also
+If you don't have `pip`, you can also try:
 
     sudo easy_install pip
     
-Running `flask` web application
+
+#### An example Flask app
+
+In your local copy of the litterbox repo, move into the folder Goranche/webServer and run the Python script that start a simple web server.
 
     cd Goranche/webServer
     python server.py
