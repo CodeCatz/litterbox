@@ -1,2 +1,2 @@
-print "ajda"
-print "nekaj drugega"
+ime="ajda"
+print ime
