@@ -44,8 +44,7 @@ rl_friends = 7
 
 # returns a sum of all variables... stupid as hell, but a placeholder for later
 def sum_approach(gender, age, status, ignorance, money_have, money_wants, money_spent, popularity_online, rl_friends):
-    return gender + age + status + ignorance + money_have + money_wants + money_spent + popularity_online + rl_friends
-
+    return sum(locals())
 
 # returns a weighted sum... better, but still not perfect
 def better_approach(gender, age, status, ignorance, money_have, money_wants, money_spent, popularity_online, rl_friends):
