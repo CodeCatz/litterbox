@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="utf-8" />
+		<link href="{{ url_for('.static', filename='bootstrap/css/bootstrap.css')}}" rel="stylesheet" />
+		<script src="{{ url_for('.static', filename='jQuery/jquery-1.10.2.js')}}"></script
+		<script src="{{ url_for('.static', filename='bootstrap/js/bootstrap.js')}}"></script
+		<title>Beautiful web</title>
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<a class="navbar-brand" href="/">Beautiful web</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/demo">Demo</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="container" style="padding-top:60px">
+			<div class="row">
+				<div class="col-lg-6">left pane</div>
+				<div class="col-lg-6">right pane</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Beautiful web</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					{% block content %}
+					{% endblock %}
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
