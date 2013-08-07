@@ -1,1 +1,0 @@
-pa da vidmo ce dela
