@@ -1,0 +1,36 @@
+{% extends "base.html" %} 
+{% block content %}
+<div class="row">
+ <div class="col-lg-6"> 
+ 
+<h2> Yes or NO?</h2>
+
+<!-- ul pomeni unordered  list, buleti, or je ordered, in so številke -->
+<ul>
+  <li>Yes, I can</li>
+  <li>Yes, I will.
+</ul>
+  
+<img src="{{url_for('.static', filename='img/cat.jpeg')}}" class="img-circle">
+<h1>NO!</h1>
+
+ <p> Fashizzle mydizzle bla bla bla lorem ipsum doler sit amet Church-key voluptate meggings quis actually, fingerstache laboris assumenda small batch quinoa ullamco. Literally seitan 90's, Marfa cliche disrupt whatever duis roof party typewriter Wes Anderson tattooed occupy laborum. Meggings meh Portland you probably haven't heard of them cred voluptate. Meh american apparel mlkshk tote bag, biodiesel typewriter fap. Roof party kogi bitters, Williamsburg meggings disrupt culpa adipisicing pour-over. YOLO est nostrud, vero aesthetic actually pickled. Bitters fixie aliquip, Terry Richardson id ad letterpress selvage master cleanse.  <p> Fashizzle mydizzle bla bla bla lorem ipsum doler sit amet Church-key voluptate meggings quis actually, fingerstache laboris assumenda small batch quinoa ullamco. Literally seitan 90's, Marfa cliche disrupt whatever duis roof party typewriter Wes Anderson tattooed occupy laborum. Meggings meh Portland you probably haven't heard of them cred voluptate. Meh american apparel mlkshk tote bag, biodiesel typewriter fap. Roof party kogi bitters, Williamsburg meggings disrupt culpa adipisicing pour-over. YOLO est nostrud, vero aesthetic actually pickled. Bitters fixie aliquip, Terry Richardson id ad letterpress selvage master cleanse.
+  </p>
+<p> This is demo page! </p>
+
+</div> <!-- levi stolpec -->
+
+<div class="col-lg-6">
+<img src="{{url_for('.static', filename='img/cat.jpeg')}}" class="img-circle">
+
+<br/>
+<br/>
+<button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button>
+
+
+</div><!-- ./desni stolpec -->
+
+
+
+</div>
+{% endblock %}

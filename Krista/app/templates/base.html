@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <link href="{{ url_for('.static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet"/>
+   <link href="{{ url_for('.static', filename='css/custom.css') }}" rel="stylesheet"/>
+   
+   <title>Beautiful web</title>
+  </head>
+  <body>
+  
+
+  <div class="container"> 
+  
+  <div class="navbar">
+  <a class="navbar-brand" href="/">Beautiful Web</a>
+  <ul class="nav navbar-nav">
+    <li class="active"><a href="/">Home</a></li>
+    <li><a href="/demo">Demo</a></li>
+
+  </ul>
+</div>
+  
+  <div class="row">
+   <div class="col-lg-6">Left part</div>
+   <div clas="col-lg-6">Right part</div>
+  </div> 
+   
+   
+  <h1>Beautiful web</h1> 
+ 
+  
+ 
+     {% block content %} 
+     {% endblock %}
+	
+  <a href="/">Home</a>
+  </div> 
+  
+
+<script src="{{ url_for('.static', filename='js/jquery-1.10.2.min.js') }}"></script>	
+<script src="{{ url_for('.static', filename='bootstrap/js/bootstrap.js') }}"></script>	
+
+    
+    
+ </body>
+ </html>
+   
