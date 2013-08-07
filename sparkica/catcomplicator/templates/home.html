@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="jumbo">
+    <h2>You asked for it.</h2>
+    <p>I'll complicate your life.<p>
+    <img src="{{ url_for('.static', filename='img/cat.jpg') }}"/>
+  </div>
+  <div><a href="/complicate">I dare you!</a></div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="jumbo">
+	<h2>Gimme your data</h2>
+	<form name="catcomp" action="/complicate" method="post">
+		<input type="radio" name="gender" value="male" />Male
+		<br />
+		<input type="radio" name="gender" value="female" checked="checked" />Female
+		<br />
+		<br />
+		Age: 
+		<br />
+		<input type="text" name="age" />
+		<br />
+		<br />
+		<input type="submit" value="Gimme score!" />
+	</form>
+
+  </div>
+{% endblock %}
