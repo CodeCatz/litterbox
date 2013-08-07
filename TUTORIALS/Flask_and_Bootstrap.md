@@ -2,7 +2,9 @@
 
 ### Step 1: install Flask 
 
-(hint: `pip install flask`)
+[Flask](http://flask.pocoo.org) is a lightweight framework for Python web apps.
+
+To install it, just run `pip install flask` in your Terminal.
 
 ### Step 2: create basic folders for your new app
 
@@ -18,7 +20,7 @@ Create a file called `server.py` in you main project folder (`app/`):
 
 ---
 
-from flask import Flask, render_template
+	from flask import Flask, render_template
 
 	app = Flask(__name__)
 	
