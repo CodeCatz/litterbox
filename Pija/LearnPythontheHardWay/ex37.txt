@@ -1,0 +1,110 @@
+SYMBOL REVIEW
+
+KEYWORDS
+- and : Called Logical operator. If both the operands are true then then condition becomes true.
+- del : The del statement - to remove an item from a list. 
+- from : Part of the import statement. From which module import what.
+- not : logical (boolean) operator, returns True if argument is False, and False if argument is True
+- while : while-loop
+- as : part of the with statement
+- elif : else if - another option in an if statement
+- global : global variable. The purpose of the global statement is to declare that a function or method intends to change the value of a name from the global scope, that is, a name from outside the function.
+- or : logical operator, the statement is True if at least one part of it is True
+- with : with statement. The with statement is used to wrap the execution of a block with methods defined by a context manager.
+- assert : Python's assert statement helps you find bugs more quickly and with less pain. Used for debugging. 
+- else : the final part of an if statement 
+- if : if statement - a condition if sth is True, do stuff 
+- pass : pass is a null operation -- when it is executed, nothing happens. It is useful as a placeholder when a statement is required syntactically, but no code needs to be executed
+- yield : Yield is a keyword that is used like return, except the function will return a generator. The yield statement is only used when defining a generator function, and is only used in the body of the generator function. Using a yield statement in a function definition is sufficient to cause that definition to create a generator function instead of a normal function.
+- break : The break statement breaks out of the smallest enclosing for or while loop.
+- except : Python has the except: clause, which catches all exceptions. Since every error in Python raises an exception, using except: can make many programming errors look like runtime problems, which hinders the debugging process.
+- import : to import modules or files
+- print : print evaluates each expression in turn and writes the resulting object to standard output. If an object is not a string, it is first converted to a string using the rules for string conversions. The (resulting or original) string is then written.
+- class : Class definitions, like function definitions (def statements) must be executed before they have any effect. (You could conceivably place a class definition in a branch of an if statement, or inside a function.)
+- exec : This statement supports dynamic execution of Python code. The first expression should evaluate to either a string, an open file object, a code object, or a tuple. If it is a string, the string is parsed as a suite of Python statements which is then executed (unless a syntax error occurs). If it is an open file, the file is parsed until EOF and executed. If it is a code object, it is simply executed.
+- in : if sth is in sth else
+- raise : The raise statement allows the programmer to force a specified exception to occur. 
+- continue: The continue statement, also borrowed from C, continues with the next iteration of the loop.
+- finally : is part of a try statement
+- is : Comparisons to singletons like None should always be done with 'is' or 'is not', never the equality operators.
+- return : The return statement is used to return from a function i.e. break out of the function. We can optionally return a value from the function as well.
+- def : The keyword def introduces a function definition. It must be followed by the function name and the parenthesized list of formal parameters.
+- for : For loops are traditionally used when you have a piece of code which you want to repeat n number of times.
+- lambda : To generalize, a lambda function is a function that takes any number of arguments (including optional arguments) and returns the value of a single expression. lambda functions can not contain commands, and they can not contain more than one expression. 
+- try : try statement. The try ... except statement has an optional else clause. 
+
+
+
+DATA TYPES
+- True :
+- False :
+- None :
+- strings :
+- numbers :
+- floats :
+- lists :
+
+
+STRING ESCAPE SEQUENCES
+\\
+\'
+\"
+\a
+\b
+\f
+\n
+\r
+\t
+\v
+
+
+STRING FORMATS
+%d
+%i
+%o
+%u
+%x
+%X
+%e
+%E
+%f
+%F
+%g
+%G
+%c
+%r
+%s
+%%
+
+
+OPERATORS
++
+-
+*
+**
+/
+//
+%
+<
+>
+<=
+>=
+==
+!=
+<>
+( )
+[ ]
+{ }
+@
+,
+:
+.
+=
+;
++=
+-=
+*=
+/=
+//=
+%=
+**=
