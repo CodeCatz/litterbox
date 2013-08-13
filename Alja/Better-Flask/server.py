@@ -24,6 +24,10 @@ def grumpy():
 def faq():
 	return render_template('faq.html')
 
+@app.route('/moar')
+def moar():
+	return render_template('moar.html')
+
 # defining root page
 @app.route('/')
 def index():
