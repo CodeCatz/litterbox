@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="row">
+  	<div class="col-lg-6"> <!--zacetek levega stolpca-->
+<h2> Yes or no</h2>
+
+<!-- ul= unordered list = bulleti ol = ordered list = cifre-->
+<ul>
+	<li>Yes, I can.</li>
+	<li>Yes, I will.</li>
+</ul>
+
+<ol>
+	<li>one</li>
+	<li>two</li>
+</ol>
+
+<img src="{{url_for('.static', filename='img/cat.jpg')}}" class="img-circle">
+</div> <!-- konec levega stolpca-->
+
+<div class="col-lg-6"> <!--zacetek desnega stolpca-->
+<img src="{{url_for('.static', filename='img/cat2.jpg')}}" class="img-circle">
+
+<br/>
+<br/>
+<button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button>
+<br/>
+<br/>
+
+  <p>This is the demo part. When I get back, remind to tell you about the time I took 100 nuns to Nairobi! I took a Viagra, got stuck in me throat, I've had a stiff neck for hours. Your were only supposed to blow the bloody doors off. Jasper: Your baby is the miracle the whole world has been waiting for. Pull my finger! You are as precious to me as you were to your own mother and father. I swore to them that I would protect you, and I haven't. You know, your bobby dangler, giggle stick, your general-two-colonels, master of ceremonies... Yeah, don't be shy, let's have a look. Pull my finger! Jasper: Your baby is the miracle the whole world has been waiting for. At this point, I'd set you up with a chimpanzee if it'd brought you back to the world! I want to shoot the pigeons... off my roof. You're only supposed to blow the bloody doors off! </p>
+</div> <!-- konec desnega stolpca-->
+</div>
+{% endblock %}
