@@ -1,0 +1,29 @@
+body {
+	background-color: rgb(240, 248, 255);
+}
+
+h1 {
+	color: #2B4F81;
+	font-family: Marmelad;
+	text-align: center;
+}
+
+p {
+	font-family: Marmelad;
+	text-align: center;
+	font-size: 13px;
+	color: #000000;
+}
+
+form {
+	font-family: Marmelad;
+	text-align: center;
+	color: #000000;
+}
+
+h4 {
+	color: #2B4F81;
+	font-family: Marmelad;
+	text-align: center;
+}
+

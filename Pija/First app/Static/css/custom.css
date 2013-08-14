@@ -1,0 +1,108 @@
+body {
+	font-family: Marmelad;
+	color: #78CE8C;
+	background-image: url('.static/img/ozadje.png');
+	background-repeat: no-repeat;
+
+}
+
+h1, .h1 {
+	font-family: Marmelad;
+}
+
+p {
+	font-size: 16px;
+}
+
+.accordion-toggle {
+	color: #00ff00;
+}
+
+.navbar {
+	background-color: rgba(226, 205, 243, 0.43);
+}
+
+.navbar-brand img {
+	height: 60px;
+	width: 200px;
+}
+
+a.navbar-brand {
+	float: left;
+	max-width: none;
+	margin-right: 0px;
+	margin-left: -50px;
+	margin-top: -30px;
+	margin-bottom: -9px;
+}
+.navbar-nav > .active > a {
+	color: #555555;
+	background-color: rgba(169, 165, 199, 1);
+}
+
+.navbar-nav > .active > a:hover {
+	background-color: #ABA2B8;
+}
+
+.dropdown {
+	position: relative;
+}
+
+img {
+	height: 160px;
+	width: 240px;
+}
+
+.navbar-nav > li > a {
+	 color: #555555;
+}
+
+ul {
+    font-family: Marmelad;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+li ul {
+    display: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff; /* bel text complicatorja ko narediš hover na litterbox  */
+    border-top: 1px solid #ffffff;
+    padding: 5px 15px 5px 15px;
+    background: rgba(169, 165, 199, 1);
+    margin-left: 1px;
+    white-space: nowrap;
+}
+
+ul li a:hover {
+background: #ffffff;
+}
+
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+li:hover li {
+    float: none;
+    font-size: 11px;
+}
+li:hover a { background: #ABA2B8; }
+
+li:hover li a:hover {
+    background: #78CE8C;
+    color: #ffffff;
+    text-decoration: none;
+}

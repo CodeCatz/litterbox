@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Members</h1>
+<br/>
+
+<div class ="row"> <!--third row, ki smo ga prestavili iz base-->
+	<div class="col-lg-6">
+			<h4><img src="{{url_for('.static', filename='img/cat6.jpg')}}" class ="img-circle"/> Alja</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat3.jpg')}}" class ="img-circle"/> Mateja</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat2.jpg')}}" class ="img-circle"/> Goran</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat10.jpg')}}" class ="img-circle"/> Žiga</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat11.jpg')}}" class ="img-circle"/> Miha</h4><br/>
+	</div> <!-- ./konec levega stolpca -->
+	
+	<div class="col-lg-6">
+			<h4><img src="{{url_for('.static', filename='img/cat1.jpg')}}" class ="img-circle"/> Krista</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat5.jpg')}}" class ="img-circle"/> Ajda</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat4.jpg')}}" class ="img-circle"/> Nataša</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat7.jpg')}}" class ="img-circle"/> Heidi</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat9.jpg')}}" class ="img-circle"/> Sara</h4><br/>
+			<h4><img src="{{url_for('.static', filename='img/cat8.jpg')}}" class ="img-circle"/> Pija</h4><br/>
+	</div> <!-- ./konec desnega stolpca-->
+</div> <!-- ./row-->
+{% endblock %}
+
+
+
+		<!--h2>Yes or no?</h2-->
+			<!--ul--> <!-- unordered list -->
+				<!--li>Yes, I can.</li--> <!-- list item -->
+				<!--li>Yes, I will.</li>
+			</ul>
+
+		<img src="{{url_for('.static', filename='img/bold_cat.jpg')}}" class ="img-circle"/>
+
+		<h1>NO!</h1>
+	
+
+	
+		<h1>NO or NO?</h1>
+		<br/><br/>
+		<img src="{{url_for('.static', filename='img/kitty.jpg')}}" class ="img-circle"/>
+		<br/><br/>
+		<button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button>
+	
+

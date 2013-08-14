@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ url_for('.static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet" type="text/css"/> <!--flasku povemo kateri file bi radi vkljucili-->
+		<link href="{{ url_for('.static', filename='css/custom.css') }}" rel ="stylesheet" type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
+		<title>Beautiful web</title>
+	</head>
+
+	<body><!--style="background-image:url(http://kaitou-fansubs.com/wp-content/uploads/1372205018_custom_pattern_day.jpeg)"-->
+		<div class="container">
+			<div id="header">
+			<div class="navbar">
+  				<a class="navbar-brand" href="/"><img src="{{url_for('.static', filename='img/codecatz_logo.png')}}"/></a>
+ 				 <ul class="nav navbar-nav">
+    				<li class="active"><a href="/">Home</a></li> <!-- anchor # posebna vrsta linkov, znotraj strani se lahko premikaš med deli, zamenjali smo ga z / -->
+    				<li><a href="#">Litterbox</a>
+    						<ul>
+    							<li><a href="/demo">Complicator</a></li>
+    						</ul>
+    				</li>
+    				<li><a href="#">Sandbox</a>
+							<ul>
+    							<li><a href="/sandbox">Members</a></li>
+    						</ul>
+    				</li>
+  				</ul>
+		</div>
+		
+
+		<!--div class="row"--> <!--first row, dva stolpca-->
+			<!--div class="col-lg-6">Left part</div>
+			<div class="col-lg-6">Right part</div>
+		</div-->
+
+		
+		
+		
+			{% block content %}
+			{% endblock %}
+		
+		
+		<!--div class ="row"--> <!--fourth row-->
+			<!--div class="col-lg-12"-->
+			<!--a href="/">Home</a>
+			</div--> 
+		</div>
+
+		</div>
+		
+		
+		<script src="{{ url_for('.static', filename='js/jquery-1.10.2.min.js') }}"></script>
+		<script src="{{ url_for('.static', filename='bootstrap/js/bootstrap.js') }}"></script>
+
+	</body>
+</html>
