@@ -12,7 +12,7 @@ Create a new directory with your app's name with two subdirectories:
 
 		app/	
 			templates/  # will be used for content files
-			states/		# will be used for images and other stuff that doesn't really change that often
+			static/		# will be used for images and other stuff that doesn't really change that often
 
 ### Step 3: create a basic web app with Flask
 
