@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ url_for('.static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
+        <link href="{{ url_for('.static', filename='css/custom.css') }}" rel="stylesheet" />
+        <title>Dogz N Catz</title>
+    </head>
+    <body>
+    
+    <div class="jumbotron">
+        <a href="/"><h1>Dogz N Catz</h1></a>
+    </div>
+
+
+
+    <div class="container">
+
+        <ul class="nav nav-pills">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/photo">Photo</a></li>
+        </ul>
+
+
+                {% block content %}
+                {% endblock %}
+
+    <nav class="navbar navbar-fixed-bottom" role="navigation">
+       <div class="row">
+        <div class="col-lg-12">
+            <p><br/>Created with Flask and Bootstrap</p>
+        </div>
+        </div>
+    </nav>
+
+    </div>
+
+
+    <script src="{{ url_for('.static', filename='js/jquery-1.10.2.min.js') }}"></script>
+    <script src="{{ url_for('.static', filename='bootstrap/js/bootstrap.js') }}"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+body {
+	padding: 40px;
+}
+
+.jumbotron {
+	background: #0087DC;
+}
+
+.jumbotron h1 {
+	color: white;
+}
