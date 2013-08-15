@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+	<h1>How complex is your life?</h1>
+		<form name="complicators" action="/complicator" method="post">
+			
+			Age:
+			<input type="text" name="age" />
+			<br />
+			<br />
+			Gender: 
+			<br />
+			<input type="radio" name="gender" value="1" />Male
+			<br />
+			<input type="radio" name="gender" value="10" checked="checked" />Female
+			<br />
+			<br />
+
+
+			Relationship status:
+			<br />
+			<input type="radio" name="status" value="2" />single
+			<br />
+			<input type="radio" name="status" value="4" />in a relationship
+			<br />
+			<input type="radio" name="status" value="6" />open relationship
+			<br />
+			<input type="radio" name="status" value="8" />it's complicated
+			<br />
+			<input type="radio" name="status" value="10" checked="checked" />I'm a pizza
+			<br />
+			<input type="radio" name="status" value="0" />depends who asks
+			<br />
+			<br />
+
+			Ignorance
+			<br />
+			<input type="text" name="ignorance" />
+			<br />
+			<br />
+			Money have: <input type="text" name="money_have" />
+			<br />
+			<br />
+			Money wants:
+			<input type="text" name="money_wants" />
+			<br />
+			<br />
+			Money spent:
+			
+			<input type="text" name="money_spent" />
+			<br />
+			<br />
+			Your Klout score:
+			
+			<input type="text" name="popularity_online" />
+			<br />
+			<br />
+			Number of real friends:
+			<br />
+			<input type="radio" name="rl_friends" value="0" checked="checked" />0 - 2
+			<br />
+			<input type="radio" name="rl_friends" value="4" />3 - 4
+			<br />
+			<input type="radio" name="rl_friends" value="10" />6 or more
+			<br />
+			<br />
+			<input type="submit" value="Calculate" />
+		</form>
+{% endblock %}
