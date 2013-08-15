@@ -1,8 +1,11 @@
 {% extends "base.html" %}
+
+{% block title %}Complexicator{% endblock %}
+
 {% block content %}
 
-	<h1>How complex is your life?</h1>
-		<form name="complicators" action="/complicator" method="post">
+	<h2>How complex is your life?</h2>
+		<form name="complicators" action="/complexicator" method="post">
 			
 			Age:
 			<input type="text" name="age" />

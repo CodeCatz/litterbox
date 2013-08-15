@@ -29,7 +29,7 @@ def faq():
 def moar():
 	return render_template('moar.html')
 
-@app.route("/complicator", methods=['GET', 'POST'])
+@app.route("/complexicator", methods=['GET', 'POST'])
 def complicator():
     if request.method == 'POST':
         age = request.form['age']

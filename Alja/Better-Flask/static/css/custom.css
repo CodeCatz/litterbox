@@ -82,6 +82,10 @@ body {
   height: 300px;
 }
 
+.carousel h1 {
+  font-size: 60px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
