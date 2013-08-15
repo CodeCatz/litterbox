@@ -28,15 +28,15 @@ def age_calc(age):
 		return 0
 
 def klout_calc(score):
-	if score <= 40:
-		return 0
+	if score >= 1 and score <= 40:
+		return 1
 	elif score > 40 and score <= 50:
 		return 4
 	elif score > 50 and score <= 60:
 		return 6
 	elif score > 60 and score <= 80:
 		return 8
-	elif score > 80:
+	elif score > 80 and score <= 100:
 		return 10
 	else:
 		return 0
