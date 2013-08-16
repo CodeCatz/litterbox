@@ -1,92 +1,58 @@
 {% extends "base.html" %}
 {% block content %}
 
-<html>
-	<head>
-		<title>Complexity of life calculator</title>
-		<link href="{{ url_for('.static', filename='css/calc_p2.css') }}" rel ="stylesheet" type="text/css"/>
-		<link href='http://fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
-		<meta charset="UTF-8">
-	</head>
-
-	<body>
-		<form name="vnos" action="/" method="post">
+<div class="calc_p2">
+	<form name="vnos" action="/complicator" method="post">
 		<br>
-   		<h4>1. Let's start off with the basic questions. What's your name?</h4>
-   			<form action="demo_form.asp">
-  				Type name: <input type="text" name="praznopolje">
-  			<br>
-  			</form>
+		<h4>1. Let's start off with the basic questions. What's your name?</h4>
+		Type name: <input type="text" name="praznopolje">
+		<br>
 		<br><br>
 		<h4>2. Please choose your gender.</h4>
-		<!--div class="form-field"-->
-			<form>
-				<input type="radio" name="spol" value="male"/> Male
-				<br>
-				<input type="radio" name="spol" value="female"/> Female 
-			</form>
-		<!--/div-->
+			<input type="radio" name="gender" value="male"/> Male
+		<br>
+			<input type="radio" name="gender" value="female"/> Female 
 		<br><br>
 		<h4>3. How old are you?</h4>
-			<form action="demo_form.asp">
-  				Age: <input type="text" name="age">
-  			<br>
-  			</form>
-  		<br><br>
-  		<h4>4. How would you define your relationship status?</h4>
-  		<!--div class="form"-->
-  			<form>
-				<input type="radio" name="relationship_status" value="single"/> Single
-				<br>
-				<input type="radio" name="relationship_status" value="relationship"/> In relationship
-				<br>
-				<input type="radio" name="relationship_status" value="open"/> In open relationship
-				<br>
-				<input type="radio" name="relationship_status" value="complicated"/> It's complicated
-				<br>
-				<input type="radio" name="relationship_status" value="pizza"/> I'm a pizza
-				<br>
-				<input type="radio" name="relationship_status" value="depends"/> Depends
-			</form>
-		<!--/div-->
+			Age: <input type="text" name="age">
+		<br>
+		<br><br>
+		<h4>4. How would you define your relationship status?</h4>
+			<input type="radio" name="status" value="single"/> Single
+		<br>
+			<input type="radio" name="status" value="relationship"/> In relationship
+		<br>
+			<input type="radio" name="status" value="open"/> In open relationship
+		<br>
+			<input type="radio" name="status" value="complicated"/> It's complicated
+		<br>
+			<input type="radio" name="status" value="pizza"/> I'm a pizza
+		<br>
+			<input type="radio" name="status" value="depends"/> Depends
 		<br><br>
 		<h4>5. How ignorant of the world are you?</h4>
-			<form action="demo_form.asp" method="get">
-				Ignorance:  0<input type="range" name="points" min="0" max="100">100
-			</form>
-		<p>(0 means 'stressing yourself over every little thing' and 100 means 'I don't give a shit.')</p>
+			Ignorance:  0<input type="range" name="ignorance" min="0" max="100">100
+				<p>(0 means 'stressing yourself over every little thing' and 100 means 'I don't give a shit.')</p>
 		<br><br>
 		<h4>6. How much money do you have (in Euros)?</h4>
-		<form action="demo_form.asp">
-  		I have: <input type="int" name="money_have">€
-  		<br>
-  		</form>
-  		<br><br>
-  		<h4>7. How much money do you want (in Euros)?</h4>
-  		<form action="demo_form.asp">
-  		I want: <input type="int" name="money_want">€
-  		<br>
-  		</form>
-  		<br><br>
-  		<h4>8. How many friends do you have on Facebook?</h4>
-  		<form action="demo_form.asp">
-  		I have <input type="int" name="fbfriends"> FB friends.
-  		<br>
-  		</form>
-  		<br><br>
-  		<h4>9. How many friends do you have in real life?</h4>
-  		<form action="demo_form.asp">
-  		I have <input type="int" name="rlfriends"> friends.
-  		<br>
-  		</form>
+			I have: <input type="int" name="money_have">€
+		<br>
+		<br><br>
+		<h4>7. How much money do you want (in Euros)?</h4>
+			I want: <input type="int" name="money_wants">€
+		<br>
+		<br><br>
+		<h4>8. How many friends do you have on Facebook?</h4>
+			I have <input type="int" name="popularity_online"> FB friends.
+		<br>
+		<br><br>
+		<h4>9. How many friends do you have in real life?</h4>
+			I have <input type="int" name="rl_friends"> friends.
+		<br>
+		<br><br>
+		<button type="submit" class="btn btn-primary btn-lg">Calculate</button>
 		<br><br><br>
-		<form><input type="submit" value="Calculate"></form>
-		<!--button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button-->
-		<br><br><br>
-	</body>
-	
-		
+	</form>
+</div>
 
-
-</html>
 {% endblock %}

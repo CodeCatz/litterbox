@@ -7,25 +7,31 @@
 		<title>Beautiful web</title>
 	</head>
 
-	<body><!--style="background-image:url(http://kaitou-fansubs.com/wp-content/uploads/1372205018_custom_pattern_day.jpeg)"-->
-		<div class="container">
+	<body>
+		<div class="container"> <!-- div je block element, span je inline -->
 			<div id="header">
 			<div class="navbar">
-  				<a class="navbar-brand" href="/"><img src="{{url_for('.static', filename='img/codecatz_logo.png')}}"/></a>
- 				 <ul class="nav navbar-nav">
-    				<li class="active"><a href="/">Home</a></li> <!-- anchor # posebna vrsta linkov, znotraj strani se lahko premikaš med deli, zamenjali smo ga z / -->
-    				<li><a href="#">Litterbox</a>
-    						<ul>
-    							<li><a href="/demo">Complicator</a></li>
-    						</ul>
-    				</li>
-    				<li><a href="#">Sandbox</a>
+				<a class="navbar-brand" href="/"><img src="{{url_for('.static', filename='img/codecatz_logo.png')}}"/></a>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/">Home</a></li> <!-- anchor # posebna vrsta linkov, znotraj strani se lahko premikaš med deli, zamenjali smo ga z / -->
+						<li><a href="#">Litterbox</a>
 							<ul>
-    							<li><a href="/sandbox">Members</a></li>
-    						</ul>
-    				</li>
-  				</ul>
-		</div>
+								<li><a href="/demo">Complicator</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Sandbox</a>
+							<ul>
+								<li><a href="/sandbox">Members</a></li>
+							</ul>
+						</li>
+						<li><a href="/newstuff">Awesome</a></li>
+					</ul>
+			</div>
+			</div>
+
+
+
+
 		
 
 		<!--div class="row"--> <!--first row, dva stolpca-->
@@ -36,7 +42,7 @@
 		
 		
 		
-			{% block content %}
+			{% block content %} <!-- ustvari nek block oziroma prazen prostor v katerega bomo nekaj dali - to kar bomo dali noter, poimenujemo npr. content -->
 			{% endblock %}
 		
 		
@@ -44,13 +50,12 @@
 			<!--div class="col-lg-12"-->
 			<!--a href="/">Home</a>
 			</div--> 
-		</div>
-
-		</div>
 		
+		</div> <!-- konec containerja -->
 		
-		<script src="{{ url_for('.static', filename='js/jquery-1.10.2.min.js') }}"></script>
-		<script src="{{ url_for('.static', filename='bootstrap/js/bootstrap.js') }}"></script>
+		<script src="{{ url_for('.static', filename='js/jquery-1.10.2.min.js') }}"></script> <!-- dodan jQuery, ki mora biti nad bootstrapom, ker se na strani najprej naloži knjižnica iz jQueryja in šele potem bootstrap -->
+		<script src="{{ url_for('.static', filename='bootstrap/js/bootstrap.js') }}"></script> <!-- vkljucen JavaScript iz bootstrapa -->
+	
 
 	</body>
 </html>

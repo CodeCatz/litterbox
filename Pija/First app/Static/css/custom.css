@@ -1,9 +1,26 @@
+/* margin je od zunaj, padding je od znotraj */
+
+/* FIRST PAGE 
+-------------------------------------------------- */
+
 body {
 	font-family: Marmelad;
-	color: #78CE8C;
-	background-image: url('.static/img/ozadje.png');
+	color: #ffffff;
+	background-image: url('/static/img/girlwithmac.jpg');
+	background-size: 100%;
+	background-position: 0% 100%; /* The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100% */
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
 
+.contentcatz {
+	background-color: rgba(0, 63, 135, 0.8);
+	margin-top: 80px;
+	margin-bottom: 100px;
+	padding: 10px;
+	border-radius: 20px 20px 20px 20px; 
+	/*box-shadow: 5px 5px 5px rgb(255, 250, 250) inset, 0px 3px 6px rgb(255, 250, 250) inset*/
 }
 
 h1, .h1 {
@@ -14,12 +31,86 @@ p {
 	font-size: 16px;
 }
 
+/* KALKULATOR PAGE 1
+-------------------------------------------------- */
+
+.calc_p1 {
+	background-color: rgba(0, 63, 135, 0.8);
+	border-radius: 20px 20px 20px 20px; 
+	padding: 10px;
+	margin-top: 80px;
+}
+
+.calc_p1 > h1 {
+	text-align: center;
+	color: rgb(130, 207, 253);
+}
+
+.calc_p1 > p {
+	text-align: center;
+}
+
+.calc_p1 > p img {
+	height: 80px;
+	width: 100px;
+}
+
+/* KALKULATOR PAGE 2
+-------------------------------------------------- */
+
+.calc_p2 {
+	background-color: rgba(0, 63, 135, 0.8);
+	border-radius: 20px 20px 20px 20px; 
+	padding: 10px;
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.calc_p2 > form {
+	text-align: center;
+}
+
+.calc_p2 > form > h4 {
+	color: rgb(130, 207, 253);
+	font-family: Marmelad;
+}
+
+/* SANDBOX aka MEMBERS
+-------------------------------------------------- */
+
+.content_members {
+	background-color: rgba(0, 63, 135, 0.8);
+	border-radius: 20px 20px 20px 20px; 
+	padding: 10px;
+	margin-top: 80px;
+	margin-bottom: 100px;
+}
+
+.content_members > h1 {
+	text-align: center;
+}
+
+input {
+	border: none;
+	border-radius: 20px 10px 20px 10px;
+}
+
 .accordion-toggle {
-	color: #00ff00;
+	color: #ffffff;
+}
+
+/* accordion hover */
+a:hover {
+	color: rgb(130, 207, 253);
+	text-decoration: none;
 }
 
 .navbar {
-	background-color: rgba(226, 205, 243, 0.43);
+	background-color: rgba(30, 144, 255, 0.5);
+	width: 1430px;
+	margin-left: -130px;
+	padding: 10px;
+	border-radius: 20px 20px 20px 20px;
 }
 
 .navbar-brand img {
@@ -35,13 +126,17 @@ a.navbar-brand {
 	margin-top: -30px;
 	margin-bottom: -9px;
 }
+
+/* home */
 .navbar-nav > .active > a {
-	color: #555555;
-	background-color: rgba(169, 165, 199, 1);
+	color: #ffffff;
+	background-color: rgba(2, 118, 253, 0.5);
 }
 
-.navbar-nav > .active > a:hover {
-	background-color: #ABA2B8;
+/* hover home */
+.navbar-nav > .active > a:hover { 
+	background-color: rgba(2, 118, 253, 0.5);
+	border-radius: 20px 20px 20px 20px;
 }
 
 .dropdown {
@@ -54,7 +149,8 @@ img {
 }
 
 .navbar-nav > li > a {
-	 color: #555555;
+	 color: #fff;
+	 border-radius: 20px 20px 20px 20px;
 }
 
 ul {
@@ -79,11 +175,12 @@ ul li a {
     display: block;
     text-decoration: none;
     color: #ffffff; /* bel text complicatorja ko narediš hover na litterbox  */
-    border-top: 1px solid #ffffff;
     padding: 5px 15px 5px 15px;
-    background: rgba(169, 165, 199, 1);
+    background: rgba(2, 118, 253, 0.5);
     margin-left: 1px;
     white-space: nowrap;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
 }
 
 ul li a:hover {
@@ -99,10 +196,12 @@ li:hover li {
     float: none;
     font-size: 11px;
 }
-li:hover a { background: #ABA2B8; }
+li:hover a { background: rgb(0, 63, 135); } 
 
 li:hover li a:hover {
-    background: #78CE8C;
+    background: rgba(2, 118, 253, 0.5);
     color: #ffffff;
     text-decoration: none;
 }
+
+

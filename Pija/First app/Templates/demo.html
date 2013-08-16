@@ -1,29 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
-<html>
-	<head>
-		<title>Complexity of life calculator</title>
-		<link href="{{ url_for('.static', filename='css/calculator.css') }}" rel ="stylesheet" type="text/css"/>
-		<link href='http://fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
-		<meta charset="UTF-8">
-	</head>
 
-	<body>
-		<br><br>
-		<h1>Welcome to the Complexity of life calculator!</h1>
-		<br>
-		<p>You'll be asked some simple questions and depending on your answers the calculator will deduct how complicated your life is. 
+		<div class="calc_p1">
+			<h1>Welcome to the Complexity of life calculator!</h1>
+			<br>
+			<p>You'll be asked some simple questions and depending on your answers the calculator will deduct how complicated your life is. 
 So if you're ready, let's get started! :)</p>
-		<br>
-		
-		<p>Please click on NEXT to continue: </p>
-		<p><a href= "/calc_p2"> <img src="{{url_for('.static', filename='img/next.png')}}"></a></p>
-		
-		
-	</body>
-	
-		
+			<br>
+			<p>Please click on NEXT to continue: </p>
+			<p><a href= "/complicator"> <img src="{{url_for('.static', filename='img/next.png')}}" alt="Next" height="80" width="100"></a></p>
+		</div>
 
 
-</html>
 {% endblock %}
