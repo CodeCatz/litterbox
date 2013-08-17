@@ -1,26 +1,49 @@
-from flask import Flask, render_template
-
+from calculator_new import complexity_calc
+from flask import Flask, request, render_template
 app = Flask(__name__)
 
-@app.route('/sandbox')
-def sandbox():
-	return render_template('sandbox.html')
-
-@app.route('/demo')
-def demo():
-	return render_template('demo.html')
-
-@app.route('/calc_p2')
-def calc_p2():
+@app.route('/complicator', methods=['GET', 'POST'])
+def komplikator():
+	print request.method
+	if request.method == 'POST':
+		gender = request.form['gender']
+		age = request.form['age']
+		status = request.form['status']
+		ignorance = request.form['ignorance']
+		money_have = request.form['money_have']
+		money_wants = request.form['money_wants']
+		popularity_online = request.form['popularity_online']
+		rl_friends = request.form['rl_friends']
+		if age.isdigit() and ignorance.isdigit() and money_have.isdigit() and money_wants.isdigit() and popularity_online.isdigit() and rl_friends.isdigit():
+			return render_template('komplikator_result.html', complexity = complexity_calc)
+		#return render_template('komplikator_result.html', complexity = 6)
+	print "something else"
 	return render_template('calc_p2.html')
+
+
+@app.route('/')
+def home():
+	return render_template('home.html')
 
 @app.route('/test')
 def test():
 	return "this is just a test"
 
-@app.route('/')
-def home():
-	return render_template('home.html')
+@app.route('/demo')
+def demo():
+	return render_template('demo.html')
+
+@app.route('/sandbox')
+def sandbox():
+	return render_template('sandbox.html')
+
+@app.route('/calc_p2')
+def calc_p2():
+	return render_template('calc_p2.html')
+
+@app.route('/newstuff')
+def newstuff():
+	return render_template('newstuff.html')
 
 if __name__ =='__main__':
 	app.run(debug = True)

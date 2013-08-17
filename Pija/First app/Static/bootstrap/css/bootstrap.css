@@ -2828,7 +2828,7 @@ button.close {
 .navbar-nav > .active > a,
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
-  color: #555555;
+  color: rgb(0, 63, 135); /*spremenjeno iz sive na modro*/
   background-color: #d5d5d5;
 }
 
