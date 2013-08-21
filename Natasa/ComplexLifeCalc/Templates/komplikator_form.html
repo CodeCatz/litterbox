@@ -1,7 +1,12 @@
+
+{%extends "base.html" %}
+
+
+
+{%block content %}
+
 <html>
-	<head>
-		<title>CodeCatz komplikator</title>
-	</head>
+<center>
 	<body>
 		<form name="vnos" action="/" method="POST">
 			<input type="radio" name="gender" value="male" />Male
@@ -9,7 +14,7 @@
 			<input type="radio" name="gender" value="female" />Female
 			<br />
 			<br />
-			How old are you? 
+			How old are you?
 			<br />
 			<input type="text" name="age" />
 			<br />
@@ -54,6 +59,9 @@
 
 
 			<input type="submit" value="Calculate my score!" />
+
 		</form>
+		</center>
 	</body>
 </html>
+{%endblock%}

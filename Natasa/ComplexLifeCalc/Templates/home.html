@@ -1,0 +1,64 @@
+
+{%extends "base.html" %}
+
+
+
+{%block content %}
+
+        <form name="vnos" action="/" method="POST">
+            <input type="radio" name="gender" value="male" />Male
+            <br />
+            <input type="radio" name="gender" value="female" />Female
+            <br />
+            <br />
+            How old are you?
+            <br />
+            <input type="text" name="age" />
+            <br />
+            <br />
+            What is your relationship status?
+            <br />
+
+            <input type="text" name="status" />
+            <br />
+            <br />
+            Your ignorance level
+            <br />
+            <br />
+            <input type="text" name="ignorance" />
+            <br />
+            <br />
+            How much money do you have
+            <br />
+            <input type="text" name="money_have" />
+            <br />
+            <br />
+            How much money do you need?
+            <br />
+            <input type="text" name="money_wants" />
+            <br />
+            <br />
+            How much money did you spend?
+            <br />
+            <input type="text" name="money_spent" />
+            <br />
+            <br />
+            What is your Klout score?
+            <br />
+            <input type="text" name="online_popularity"/>
+            <br />
+            <br />
+            How many real life friends do you have?
+            <br />
+            <input type="text" name="rl_friends" />
+            <br />
+            <br />
+
+
+            <input type="submit" value="Calculate my score!" />
+        </form>
+    </body>
+</html>
+<h1> This is my humble app </h1>
+<!-- tukej bo vse iz base - npr. css -->
+{%endblock %}
