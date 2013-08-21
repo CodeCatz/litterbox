@@ -1,10 +1,10 @@
-from calculator_new import complexity_calc
 from flask import Flask, request, render_template
+from calculator_new import total_calc
+
 app = Flask(__name__)
 
 @app.route('/complicator', methods=['GET', 'POST'])
 def komplikator():
-	print request.method
 	if request.method == 'POST':
 		gender = request.form['gender']
 		age = request.form['age']
@@ -15,9 +15,9 @@ def komplikator():
 		popularity_online = request.form['popularity_online']
 		rl_friends = request.form['rl_friends']
 		if age.isdigit() and ignorance.isdigit() and money_have.isdigit() and money_wants.isdigit() and popularity_online.isdigit() and rl_friends.isdigit():
-			return render_template('komplikator_result.html', complexity = complexity_calc)
-		#return render_template('komplikator_result.html', complexity = 6)
-	print "something else"
+			return render_template('komplikator_result.html', complexity = total_calc(int(age), int(gender), int(status), int(ignorance), int(money_have), int(money_wants), int(popularity_online), int(rl_friends)))
+		else:
+			return render_template('komplikator_error.html', message = "You have to type in numbers without any special signs ;)")
 	return render_template('calc_p2.html')
 
 

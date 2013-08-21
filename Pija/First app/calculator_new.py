@@ -1,8 +1,8 @@
-def gender_calc(gender):
+"""def gender_calc(gender):
 	if gender == "male":
 		return 1
 	elif gender == "female":
-		return 1
+		return 1"""
 
 def age_calc(age):
 	if age <= 10:
@@ -18,7 +18,7 @@ def age_calc(age):
 	else:
 		return 0
 
-def status_calc(status):
+"""def status_calc(status):
 	if status == "1":
 		return 1
 	elif status == "2":
@@ -30,7 +30,7 @@ def status_calc(status):
 	elif status == "5":
 		return 5
 	elif status == "6":
-		return 6
+		return 6"""
 
 def ignorance_calc(ignorance):
 	if ignorance <= 20:
@@ -104,13 +104,17 @@ def rl_friends_calc(rl_friends):
 
 
 def total_calc(gender, age, status, ignorance, money_have, money_wants, popularity_online, rl_friends):
-	total_calc = gender_calc(gender) * 0.02 + age_calc(age) * 0.06 + status_calc(status) * 0.1 + ignorance_calc(ignorance) * 0.17 + money_have_calc(money_have) * 0.13 + money_wants_calc(money_wants) * 0.13 + popularity_online_calc(popularity_online) * 0.14 + rl_friends_calc(rl_friends) * 0.25
-	return total_calc
+	my_score = gender * 0.02 + age_calc(age) * 0.06 + status * 0.1 + ignorance_calc(ignorance) * 0.17 + money_have_calc(money_have) * 0.13 + money_wants_calc(money_wants) * 0.13 + popularity_online_calc(popularity_online) * 0.14 + rl_friends_calc(rl_friends) * 0.25
+	max_score = 5.15
+	result = int((my_score / float(max_score)) * 100)
+	if result < 0:
+		return 0
+	return result
 
 
 
-def complexity_calc(complexity):
+"""def complexity_calc(complexity):
 	complexity = (total_calc/ 5.15) * 100
-	return complexity
+	return complexity"""
 
 	

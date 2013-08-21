@@ -5,30 +5,30 @@
 	<form name="vnos" action="/complicator" method="post">
 		<br>
 		<h4>1. Let's start off with the basic questions. What's your name?</h4>
-		Type name: <input type="text" name="praznopolje">
+		Type name: <input type="text" name="praznopolje" id="name">
 		<br>
 		<br><br>
 		<h4>2. Please choose your gender.</h4>
-			<input type="radio" name="gender" value="male"/> Male
+			<input type="radio" name="gender" id="male" value="1"/> Male
 		<br>
-			<input type="radio" name="gender" value="female"/> Female 
+			<input type="radio" name="gender" id="female" value="1"/> Female 
 		<br><br>
 		<h4>3. How old are you?</h4>
 			Age: <input type="text" name="age">
 		<br>
 		<br><br>
 		<h4>4. How would you define your relationship status?</h4>
-			<input type="radio" name="status" value="single"/> Single
+			<input type="radio" name="status" id="single" value="1"/> Single
 		<br>
-			<input type="radio" name="status" value="relationship"/> In relationship
+			<input type="radio" name="status" id="relationship" value="2"/> In relationship
 		<br>
-			<input type="radio" name="status" value="open"/> In open relationship
+			<input type="radio" name="status" id="open" value="3"/> In open relationship
 		<br>
-			<input type="radio" name="status" value="complicated"/> It's complicated
+			<input type="radio" name="status" id="complicated" value="4"/> It's complicated
 		<br>
-			<input type="radio" name="status" value="pizza"/> I'm a pizza
+			<input type="radio" name="status" id="pizza" value="5"/> I'm a pizza
 		<br>
-			<input type="radio" name="status" value="depends"/> Depends
+			<input type="radio" name="status" id="depends" value="6"/> Depends
 		<br><br>
 		<h4>5. How ignorant of the world are you?</h4>
 			Ignorance:  0<input type="range" name="ignorance" min="0" max="100">100

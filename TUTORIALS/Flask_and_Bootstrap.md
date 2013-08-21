@@ -90,12 +90,15 @@ Hint: your new page name appears three times in the code above. Don't forget to 
 
 Want your web app to look better without much effort? Download [Bootstrap](http://getbootstrap.com). Unzip. Rename directory to `bootstrap`, move it to folder `app/static`.
 
-Edit your `base.html` again; you have to tell our basic template where your CSS file is located:
+Edit your `base.html` again; you have to tell our basic template where your CSS file is located and we're also adding the meta viewport tag to make the web app behave well on mobile devices:
 
 	<!DOCTYPE html>
 	<html>
 		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 			<link href="{{ url_for('.static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet" />
+
 			<title>Beautiful web</title>
 		</head>
 
