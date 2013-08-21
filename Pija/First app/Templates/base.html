@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="{{ url_for('.static', filename='bootstrap/css/bootstrap.css') }}" rel="stylesheet" type="text/css"/> <!--flasku povemo kateri file bi radi vkljucili-->
 		<link href="{{ url_for('.static', filename='css/custom.css') }}" rel ="stylesheet" type="text/css"/>
 		<link href='http://fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/css'>
@@ -31,31 +32,33 @@
 
 
 
-
-		
-
 		<!--div class="row"--> <!--first row, dva stolpca-->
 			<!--div class="col-lg-6">Left part</div>
 			<div class="col-lg-6">Right part</div>
 		</div-->
 
-		
-		
-		
+
 			{% block content %} <!-- ustvari nek block oziroma prazen prostor v katerega bomo nekaj dali - to kar bomo dali noter, poimenujemo npr. content -->
 			{% endblock %}
-		
-		
+
+
 		<!--div class ="row"--> <!--fourth row-->
 			<!--div class="col-lg-12"-->
 			<!--a href="/">Home</a>
 			</div--> 
-		
+
+
 		</div> <!-- konec containerja -->
-		
+
+		<div id="footer">
+			<div class="container">
+				<p class="text-muted credit"> © CodeCatz</p>
+			</div>
+		</div>
+
 		<script src="{{ url_for('.static', filename='js/jquery-1.10.2.min.js') }}"></script> <!-- dodan jQuery, ki mora biti nad bootstrapom, ker se na strani najprej naloži knjižnica iz jQueryja in šele potem bootstrap -->
 		<script src="{{ url_for('.static', filename='bootstrap/js/bootstrap.js') }}"></script> <!-- vkljucen JavaScript iz bootstrapa -->
-	
+
 
 	</body>
 </html>

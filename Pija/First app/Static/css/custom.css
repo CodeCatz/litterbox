@@ -90,6 +90,24 @@ p {
 	text-align: center;
 }
 
+.premakni{
+	padding-left: 120px;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+
+#footer {
+  height: 0px;
+  background-color: none;
+  margin-top: 250px;
+}
+
+
+.text-muted {
+	text-align: center;
+}
+
 input {
 	border: none;
 	border-radius: 20px 10px 20px 10px;
