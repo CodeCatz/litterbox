@@ -111,10 +111,24 @@ def total_calc(gender, age, status, ignorance, money_have, money_wants, populari
 		return 0
 	return result
 
+def check_level(complexity):
+	if complexity <= 20:
+		return "low"
+	elif complexity > 20 and complexity <= 50:
+		return "medium"
+	elif complexity > 50 and complexity <= 75:
+		return "high"
+	else:
+		return "extreme"
 
-
-"""def complexity_calc(complexity):
-	complexity = (total_calc/ 5.15) * 100
-	return complexity"""
-
-	
+def interpret_score(score):
+	if score >= 0 and score <=20:
+		return "Your life is very complicated. You should take some time off to cool your head."
+	elif score > 20 and score <= 50:
+		return "You should take it easy for a while."
+	elif score > 50 and score <= 75:
+		return "Not bad. Not bad. Right somewhere in the middle. Although taking a vacation once in a while wouldn't be such a bad idea. ;) "
+	elif score > 75 and score <= 90:
+		return "I must say you're living a decent life. :)"
+	else:
+		return "Congratulations!!! Your score is very high. Keep it up! :D"
