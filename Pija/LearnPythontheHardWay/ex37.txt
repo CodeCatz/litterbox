@@ -36,75 +36,75 @@ KEYWORDS
 
 
 DATA TYPES
-- True :
-- False :
-- None :
-- strings :
-- numbers :
-- floats :
-- lists :
+- True : boolean True
+- False : boolean False
+- None : absence of value
+- strings : "blabla"
+- numbers : 1, 2, 3, 4, 5, ...
+- floats : numbers with decimals --> 1.5, 45.678
+- lists : [], [1, 2, 3,], ["elephant", 5, "kitty", 11]
 
 
 STRING ESCAPE SEQUENCES
-\\
-\'
-\"
-\a
-\b
-\f
-\n
-\r
-\t
-\v
+\\ : backslash \
+\' : single quote '
+\" : double quote "
+\a : ASCII Bell (BEL)
+\b : ASCII Backspace (BS)
+\f : ASCII Formfeed (FF)
+\n : new line
+\r : return
+\t : horizontal tabulator
+\v : vertical tabulator
 
 
-STRING FORMATS
-%d
-%i
-%o
-%u
-%x
-%X
-%e
-%E
-%f
-%F
-%g
-%G
-%c
-%r
-%s
-%%
+STRING FORMATS (http://docs.python.org/release/2.5.2/lib/typesseq-strings.html)
+%d - Signed integer decimal. [number]
+%i - Signed integer decimal. [integer]
+%o - Unsigned octal.
+%u - Unsigned decimal.
+%x - Unsigned hexadecimal (lowercase).
+%X - Unsigned hexadecimal (uppercase).
+%e - Floating point exponential format (lowercase).
+%E - Floating point exponential format (uppercase).
+%f - Floating point decimal format. [float]
+%F - Floating point decimal format.
+%g - Floating point format. Uses exponential format if exponent is greater than -4 or less than precision, decimal format otherwise.
+%G - Floating point format. Uses exponential format if exponent is greater than -4 or less than precision, decimal format otherwise.
+%c - Single character (accepts integer or single character string).
+%r - String (converts any python object using repr()). [anything]
+%s - String (converts any python object using str()). [string]
+%% - No argument is converted, results in a "%" character in the result.
 
 
 OPERATORS
-+
--
-*
-**
-/
-//
-%
-<
->
-<=
->=
-==
-!=
-<>
-( )
-[ ]
-{ }
-@
++ : plus; 1 + 1 = 2
+- : minus; 10 - 4 = 6
+* : multiply; 10 * 50 = 500
+** : exponent; 2 ** 3 = 8
+/ : divide; 30 / 5 = 6
+// : floor division; 8 // 2 = 4
+% : modulus (divides left and right, returns remainder); 11 % 4 = 2
+< : less than; 5 < 8
+> : greater than; 40 > 35
+<= : less than or equal; 2 <= 3
+>= : greater than or equal; 3 >=2
+== : checks if it's equal; 6 == 6
+!= : not equal; 2 != 3
+<> : similar to !=
+( ) : argument
+[ ] : list
+{ } : dictionary
+@ : used for class, function and method decorators
 ,
 :
 .
 =
 ;
-+=
--=
-*=
-/=
-//=
-%=
-**=
++= : x += 1 is the same as x = x + 1
+-= : x -= 1 is the same as x = x - 1
+*= : x *= 1 is the same as x = x * 1
+/= : x /= 1 is the same as x = x / 1
+//= : x //= 1 is the same as x = x // 1
+%= : x %= 1 is the same as x = x % 1
+**= : x **= 1 is the same as x = x ** 1
