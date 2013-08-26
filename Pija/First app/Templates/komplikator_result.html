@@ -1,9 +1,28 @@
-<html>
-	<head>
-		<title>CodeCatz komplikator</title>
-	</head>
-	<body>
-		<p> {{name}} Your complexity score is: {{complexity}} %.</p>
+{% extends "base.html" %}
+{% block content %}
+
+<div class="komp_result">
+	<p> {{name}} your complexity score is: {{complexity}} %.</p>
+	<div class="progress progress-striped active">
+		<div class="progress-bar{% if level == "low" %}
+			progress-bar-danger
+		{% endif %}
+		{% if level == "medium" %}
+			progress-bar-warning
+		{% endif %}
+		{% if level == "high" %}
+			progress-bar-info
+		{% endif %}
+		{% if level == "extreme" %}
+			progess-bar-success
+		{% endif %}" role="progressbar" aria-valuenow="{{complexity}}" aria-valuemin="0" aria-valuemax="100" style="width: {{complexity}}%;">
+			<span class="sr-only">{{complexity}}% complexity</span>
+		</div>
+	</div>
+
+		
+		<p>	{{message}} </p>
 		<a href="/">Back</a>
-	</body>
-</html>
+	</div>
+
+{% endblock %}

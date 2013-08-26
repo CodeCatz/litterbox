@@ -2,23 +2,30 @@
 {% block content %}
 
 <div class="calc_p2">
-	<form name="vnos" action="/complicator" method="post">
+	<form name="complicators" action="/complicator" method="post">
 		<br>
+		
 		<h4>1. Let's start off with the basic questions. What's your name?</h4>
-		Type name: <input type="text" name="praznopolje" id="name">
+		<div class="error">{% if error_name %}<label class="control-label">{{error_name}}</label>{% endif %}</div>
+		Type name: <input type="text" name="type_name" id="name">
+		
 		<br>
 		<br><br>
+		
 		<h4>2. Please choose your gender.</h4>
-			<input type="radio" name="gender" id="male" value="1"/> Male
+			<input type="radio" name="gender" id="male" value="1" checked="checked"/> Male
 		<br>
 			<input type="radio" name="gender" id="female" value="1"/> Female 
 		<br><br>
+
 		<h4>3. How old are you?</h4>
+		<div class="error">{% if error_age %}<label class="control-label">{{error_age}}</label>{% endif %}</div>
 			Age: <input type="text" name="age">
 		<br>
 		<br><br>
+		
 		<h4>4. How would you define your relationship status?</h4>
-			<input type="radio" name="status" id="single" value="1"/> Single
+			<input type="radio" name="status" id="single" value="1" checked="checked"/> Single
 		<br>
 			<input type="radio" name="status" id="relationship" value="2"/> In relationship
 		<br>
@@ -26,30 +33,41 @@
 		<br>
 			<input type="radio" name="status" id="complicated" value="4"/> It's complicated
 		<br>
-			<input type="radio" name="status" id="pizza" value="5"/> I'm a pizza
+			<input type="radio" name="status" id="pizza" value="5" /> I'm a pizza
 		<br>
 			<input type="radio" name="status" id="depends" value="6"/> Depends
 		<br><br>
+		
 		<h4>5. How ignorant of the world are you?</h4>
+		<div class="error">{% if error_ignorance %}<label class="control-label">{{error_ignorance}}</label>{% endif %}</div>
 			Ignorance:  0<input type="range" name="ignorance" min="0" max="100">100
 				<p>(0 means 'stressing yourself over every little thing' and 100 means 'I don't give a shit.')</p>
 		<br><br>
+		
 		<h4>6. How much money do you have (in Euros)?</h4>
-			I have: <input type="int" name="money_have">€
+		<div class="error">{% if error_money_have %}<label class="control-label">{{error_money_have}}</label>{% endif %}</div>
+			I have: <input type="int" name="money_have"> €
 		<br>
 		<br><br>
+
 		<h4>7. How much money do you want (in Euros)?</h4>
-			I want: <input type="int" name="money_wants">€
+		<div class="error">{% if error_money_wants %}<label class="control-label">{{error_money_wants}}</label>{% endif %}</div>
+			I want: <input type="int" name="money_wants"> €
 		<br>
 		<br><br>
-		<h4>8. How many friends do you have on Facebook?</h4>
-			I have <input type="int" name="popularity_online"> FB friends.
+		
+		<h4>8. How many friends do you have on Facebook and/or Twitter?</h4>
+		<div class="error">{% if error_pop_online %}<label class="control-label">{{error_pop_online}}</label>{% endif %}</div>
+			I have <input type="int" name="popularity_online"> FB and/or Twitter friends.
 		<br>
 		<br><br>
+		
 		<h4>9. How many friends do you have in real life?</h4>
+		<div class="error">{% if error_rl_friends %}<label class="control-label">{{error_rl_friends}}</label>{% endif %}</div>
 			I have <input type="int" name="rl_friends"> friends.
 		<br>
 		<br><br>
+		
 		<button type="submit" class="btn btn-primary btn-lg">Calculate</button>
 		<br><br><br>
 	</form>
