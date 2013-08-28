@@ -1,4 +1,4 @@
-#odpri file: myfile = open('ex3.py', 'wr')
+W#odpri file: myfile = open('ex3.py', 'wr')
 
 print "I will now count my chickens:"
 
